@@ -1,0 +1,105 @@
+:root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+}
+
+.mainContainer{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 80%;
+  /* border: 1px solid red; */
+  width:40rem;
+  height:30rem;
+}
+
+.tunes{
+  grid-column: span 2;
+  font-family: helvetica;
+  width:100%;
+  text-align: center;
+}
+
+.albums{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-family: helvetica;
+  width:fit-content;
+}
+
+.theImage{
+  width:300px;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin:0;
+  padding:0;
+}
+
+.accordion-checkbox {
+  display: none;
+}
+
+.accordion-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 3px solid #ccc;
+  font-size: 16px;
+  position: relative;
+}
+
+.accordion-icon {
+  display: inline-block;
+  width: 20px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border-top: none;
+  padding: 0 10px;
+}
+
+.accordion-checkbox:checked + .accordion-label {
+  background-color: #f1f1f1;
+}
+
+.accordion-checkbox:checked + .accordion-label .accordion-icon {
+  content: '-'; 
+}
+
+.accordion-checkbox:checked + .accordion-label + .accordion-content {
+  max-height: 200px;
+  padding: 10px;
+}
+
+.accordion-label::before {
+  content: '+';
+  display: inline-block;
+  width: 20px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.accordion-checkbox:checked + .accordion-label::before {
+  content: '-';
+}
+
+.accordion-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-label::before {
+  margin-right: auto;
+}
