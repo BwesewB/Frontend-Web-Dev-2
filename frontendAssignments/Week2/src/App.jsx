@@ -3,7 +3,7 @@ function App() {
     <>
       <div className="mainContainer">
         <h1 className="tunes">MyTunes</h1>
-        <img src="/public/yeatt.jpg" alt="yeat" className="theImage"/>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJvp7jY1j-o10idA-Y0V2TCdxPWcZJcvtWg&s" alt="yeat" className="theImage"/>
         <div className="accordionContainer">
             <h2 className="albums"> Yeat's Albums</h2>
 
