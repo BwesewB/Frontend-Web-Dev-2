@@ -49,13 +49,6 @@ export default function TaskForm() {
     }
 
     function removeTask(index) {
-        const isChecked = checkedStates[index]; // Get the current checked state
-
-        // If the checkbox is checked, do nothing
-        if (isChecked) {
-            return; 
-        }
-
         // Remove the task from tasks and checkedStates
         const updatedTasks = tasks.filter((_, i) => i !== index);
         const updatedCheckedStates = checkedStates.filter((_, i) => i !== index);
