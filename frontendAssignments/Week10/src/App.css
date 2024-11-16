@@ -1,0 +1,27 @@
+.countries{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+}
+
+@media (min-width:1295px) {
+  .countries{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width:880px) {
+  .countries{
+    grid-template-columns: 1fr;
+  }
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
